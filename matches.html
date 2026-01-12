@@ -1,36 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Matches — teamsync</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Matches — teamsync</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <header>
-<strong>teamsync</strong>
-<nav>
-<a href="index.html">Home</a>
-<a href="events.html">Events</a>
-<a href="matches.html">Matches</a>
-<a href="dashboard.html">Dashboard</a>
-</nav>
+  <strong>teamsync</strong>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="matches.html">Matches</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
 </header>
 
-
 <main class="grid">
-<div class="card">
-<h3>Team Alpha</h3>
-<p><strong>84%</strong> compatibility</p>
-<p class="muted">Needs Backend • Avg credit 88</p>
-<button class="btn" onclick="mockJoin('Team Alpha')">Request to join</button>
-</div>
 
+  <!-- Match: High confidence -->
+  <section class="card">
+    <h3>Team Alpha</h3>
 
-<div class="card">
-<h3>Team Beta</h3>
-<p><strong>72%</strong> compatibility</p>
-<p class="risk">Ghost risk detected</p>
-</div>
+    <p style="font-size:18px;margin:6px 0">
+      <strong>84%</strong> compatibility
+    </p>
+
+    <p class="muted">
+      Needs <strong>Backend</strong> • Avg team credit <strong>88</strong>
+    </p>
+
+    <p class="muted">
+      Strong skill overlap and high reliability from existing members.
+    </p>
+
+    <div style="margin-top:14px">
+      <button class="btn" data-join="Team Alpha">
+        Request to join
+      </button>
+    </div>
+  </section>
+
+  <!-- Match: Risky -->
+  <section class="card">
+    <h3>Team Beta</h3>
+
+    <p style="font-size:18px;margin:6px 0">
+      <strong>72%</strong> compatibility
+    </p>
+
+    <p class="muted">
+      Needs <strong>Frontend</strong> • Avg team credit <strong>74</strong>
+    </p>
+
+    <p class="risk" style="margin-top:8px">
+      🚩 Ghost risk detected — past dropouts
+    </p>
+
+    <p class="muted">
+      Join only if you can commit consistently.
+    </p>
+
+    <div style="margin-top:14px">
+      <button class="btn outline" data-join="Team Beta">
+        Request anyway
+      </button>
+    </div>
+  </section>
+
 </main>
+
 <script src="app.js"></script>
 </body>
 </html>
