@@ -1,35 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Dashboard — teamsync</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Dashboard — teamsync</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <header>
-<strong>teamsync</strong>
-<nav>
-<a href="index.html">Home</a>
-<a href="events.html">Events</a>
-<a href="matches.html">Matches</a>
-<a href="dashboard.html">Dashboard</a>
-</nav>
+  <strong>teamsync</strong>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="matches.html">Matches</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
 </header>
 
-
 <main class="grid grid-2">
-<div class="card">
-<h3>Your Profile</h3>
-<div class="credit">Social Credit: <span>85</span></div>
-<span class="badge good">Trusted Builder</span>
-</div>
 
+  <!-- Profile / Trust card -->
+  <section class="card">
+    <h3>Your Profile</h3>
 
-<div class="card">
-<h3>Upcoming Events</h3>
-<p class="muted">ZeroToHack — College A</p>
-<p class="muted">OpenBuilds — Online</p>
-</div>
+    <div class="credit">
+      Social Credit:
+      <span>85</span>
+    </div>
+
+    <div style="margin-top:10px">
+      <span class="badge good">🟢 Trusted Builder</span>
+    </div>
+
+    <p class="muted" style="margin-top:10px">
+      High reliability. Teams see you as a low ghosting risk.
+    </p>
+  </section>
+
+  <!-- Activity / Events -->
+  <section class="card">
+    <h3>Upcoming Events</h3>
+
+    <div style="margin-top:10px">
+      <p class="muted">
+        <strong>ZeroToHack</strong> — College A
+      </p>
+      <p class="muted">
+        <strong>OpenBuilds</strong> — Online
+      </p>
+    </div>
+
+    <div style="margin-top:14px">
+      <a href="events.html" class="btn outline">Browse events</a>
+    </div>
+  </section>
+
 </main>
+
 <script src="app.js"></script>
 </body>
 </html>
