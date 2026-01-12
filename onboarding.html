@@ -1,27 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Onboarding — teamsync</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Onboarding — teamsync</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <header>
-<strong>teamsync</strong>
+  <strong>teamsync</strong>
 </header>
 
-
 <main>
-<div class="card">
-<h3>Profile setup</h3>
-<p class="muted">Select skills and availability</p>
-<div class="skills">
-<span class="skill">Backend</span>
-<span class="skill">Frontend</span>
-<span class="skill">Design</span>
-</div>
-<br>
-<a href="dashboard.html" class="btn">Finish</a>
-</div>
+
+  <section class="card" style="max-width:520px;margin:0 auto">
+    <h3>Set up your profile</h3>
+    <p class="muted">
+      This helps teams judge compatibility and reliability.
+    </p>
+
+    <!-- Skills -->
+    <div style="margin-top:16px">
+      <p class="muted">Your skills</p>
+      <div class="skills">
+        <span class="skill">Backend</span>
+        <span class="skill">Frontend</span>
+        <span class="skill">Design</span>
+        <span class="skill">ML</span>
+      </div>
+    </div>
+
+    <!-- Availability -->
+    <div style="margin-top:16px">
+      <p class="muted">Availability (hours per day)</p>
+      <input
+        type="range"
+        min="1"
+        max="12"
+        value="6"
+        style="width:100%"
+      />
+      <p class="muted" style="margin-top:6px">
+        Higher availability improves trust perception.
+      </p>
+    </div>
+
+    <!-- Goal -->
+    <div style="margin-top:16px">
+      <p class="muted">Hackathon goal</p>
+      <div class="skills">
+        <span class="skill">Build MVP</span>
+        <span class="skill">Win</span>
+        <span class="skill">Learn</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="margin-top:20px;display:flex;justify-content:space-between;align-items:center">
+      <span class="muted">~60 seconds to complete</span>
+      <a href="dashboard.html" class="btn">Finish setup</a>
+    </div>
+
+  </section>
+
 </main>
+
+<script src="app.js"></script>
 </body>
 </html>
