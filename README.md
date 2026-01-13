@@ -35,7 +35,7 @@ It uses **AI-powered, merit-based matching** to help individuals—especially in
 | Framework   | Next.js 14 (App Router) |
 | Language    | TypeScript |
 | Styling     | Tailwind CSS (Custom Design System) |
-| Auth        | Supabase Auth (GitHub OAuth + Email) |
+| Auth        | Firebase Auth (Google + Email) |
 | Database    | Supabase PostgreSQL |
 | AI          | Gemini API |
 | Analytics   | Vercel Analytics |
